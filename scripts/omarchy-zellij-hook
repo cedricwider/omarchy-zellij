@@ -1,0 +1,22 @@
+#!/bin/bash
+set -euo pipefail
+
+readonly THEME_SNAKE="$1"
+readonly THEME="${THEME_SNAKE//_/-}"
+readonly THEME_DIR="$HOME/.config/omarchy/themes/$THEME"
+readonly ZELLIJ_CONF="$HOME/.config/zellij/config.kdl"
+
+# Validate theme directory exists
+if [[ ! -d "$THEME_DIR" ]]; then
+  echo "Error: Theme directory not found at $THEME_DIR" >&2
+  exit 1
+fi
+
+# Validate zellij config exists
+if [[ ! -f "$ZELLIJ_CONF" ]]; then
+  echo "Error: Zellij config not found at $ZELLIJ_CONF" >&2
+  exit 1
+fi
+
+# Update the theme line in zellij config by pattern matching
+sed -i "s/^theme \"[^\"]*\"/theme \"$THEME\"/" "$ZELLIJ_CONF"
