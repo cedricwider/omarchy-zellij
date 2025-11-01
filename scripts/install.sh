@@ -10,7 +10,7 @@ BOLD='\033[1m'
 NC='\033[0m'
 
 # Configuration
-REPO_URL="https://github.com/YOUR_USERNAME/omarchy-zellij"
+REPO_URL="https://github.com/cedricwider/omarchy-zellij"
 INSTALL_DIR="$HOME/.config/omarchy-zellij"
 HOOK_DEST="$HOME/.local/bin/omarchy-zellij-hook"
 OMARCHY_HOOK="$HOME/.config/omarchy/hooks/theme-set"

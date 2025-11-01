@@ -23,7 +23,7 @@
 ## Quick Start
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/YOUR_USERNAME/omarchy-zellij/main/scripts/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/cedricwider/omarchy-zellij/main/scripts/install.sh | bash
 ```
 
 > **Security Tip**: Always review scripts before running. See [docs/installation.md](docs/installation.md) for manual installation.

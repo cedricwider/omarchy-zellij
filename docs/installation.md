@@ -31,7 +31,7 @@ ls ~/.config/omarchy
 The easiest way to install is using the automated installation script:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/YOUR_USERNAME/omarchy-zellij/main/scripts/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/cedricwider/omarchy-zellij/main/scripts/install.sh | bash
 ```
 
 ### What the installer does:
@@ -50,7 +50,7 @@ If you prefer to install manually or want to understand what's happening:
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/omarchy-zellij.git ~/.config/omarchy-zellij
+git clone https://github.com/cedricwider/omarchy-zellij.git ~/.config/omarchy-zellij
 ```
 
 ### Step 2: Install the Hook Script
